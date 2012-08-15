@@ -116,7 +116,7 @@ for clay1 in np.arange(NLAY):
             ofp.write('row  col\n')
             inds = np.where(np.flipud(currdiff)>=0)
             for cind in np.arange(len(inds[0])):
-                ofp.write('%d   %d\n' %(inds[0][cind],inds[1][cind]))
+                ofp.write('%d   %d\n' %(inds[0][cind]+1,inds[1][cind]+1))
             ofp.close()
             currdiff[currdiff<=0] = 0
             plt.figure()
