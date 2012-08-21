@@ -1,9 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as mpl
+'''
+mpl.rcParams['font.sans-serif']          = 'Univers 57 Condensed' #'Arial'
+mpl.rcParams['font.serif']               = 'Times'
+mpl.rcParams['font.cursive']             = 'Zapf Chancery'
+mpl.rcParams['font.monospace']           = 'Courier New'
+mpl.rcParams['pdf.compression']          = 0
+mpl.rcParams['pdf.fonttype']             = 42
+ticksize = 6
+mpl.rcParams['legend.fontsize']  = 6
+mpl.rcParams['axes.labelsize']   = 8
+mpl.rcParams['xtick.labelsize']  = ticksize
+mpl.rcParams['ytick.labelsize']  = ticksize
+'''
 import discomb_utilities as disu
 
 plot_layers = False
-plot_lake = False
+plot_lake = True
 plot_diffs = False
 burn_in_lakes = True
 infile_dis = 'MODDANE5_rch_rjh1.dis'
